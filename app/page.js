@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Navigation from "./components/navigation";
 import VideoGallery from "./components/video-gallery";
+import Arrow from "./components/arrow";
 
 const email = "akinsipeadekemi@gmail.com";
 const booking = (subject, body = "") =>
   `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-function Arrow() {
-  return <span aria-hidden="true">↗</span>;
-}
 
 const services = [
   {

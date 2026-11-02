@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { videos } from "../data/videos";
+import Arrow from "./arrow";
 
 export default function VideoGallery() {
   const [selected, setSelected] = useState(0);
@@ -57,7 +58,7 @@ export default function VideoGallery() {
             className="video-external"
             aria-label={`Watch ${video.title} on YouTube`}
           >
-            YouTube <span aria-hidden="true">↗</span>
+            YouTube <Arrow />
           </a>
         </div>
       </div>
@@ -89,7 +90,7 @@ export default function VideoGallery() {
                 <small>{item.duration}</small>
               </span>
               <span className="selection-indicator" aria-hidden="true">
-                {selected === index ? "●" : "↗"}
+                {selected === index ? "●" : <Arrow />}
               </span>
             </button>
           ))}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Arrow from "./arrow";
 
 const links = [
   ["About", "about"],
@@ -71,7 +72,7 @@ export default function Navigation() {
             href="#contact"
             onClick={() => setOpen(false)}
           >
-            Contact me <span aria-hidden="true">→</span>
+            Contact me <Arrow direction="right" />
           </a>
         </div>
       </nav>
