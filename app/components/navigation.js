@@ -71,7 +71,7 @@ export default function Navigation() {
             href="#contact"
             onClick={() => setOpen(false)}
           >
-            Get in touch <span aria-hidden="true">↗</span>
+            Contact me <span aria-hidden="true">→</span>
           </a>
         </div>
       </nav>

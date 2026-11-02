@@ -206,11 +206,14 @@ em {
   color: var(--gold);
 }
 .nav-links > .nav-contact {
-  border: 1px solid #a5aaa5;
-  padding: 9px 15px;
+  border: 0;
+  border-bottom: 1px solid var(--gold);
+  padding: 8px 0;
   display: flex;
-  gap: 22px;
-  margin-left: 5px;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8px;
+  font-weight: 600;
 }
 .nav-contact span {
   font-size: 16px;
@@ -862,9 +865,9 @@ em {
     border-bottom: 1px solid #e7e5df;
   }
   .nav-links > .nav-contact {
-    margin: 12px 0 0;
+    margin: 8px 0 0;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding: 12px 0;
   }
   .hero {
     gap: 35px;
