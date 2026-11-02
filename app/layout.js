@@ -1,32 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
-  title: "Akinsipe Adekemi",
-  description: "Official portfolio of Evangelist Adekemi Akinsipe – Ministry, Consulting & Music,",
-   icons: {
-    icon: "/public/favicon.png", // can also use "/favicon.png" or "/favicon.svg"
+  title: "Adekemi Akinsipe | Ministry, Music & Financial Consulting",
+  description:
+    "Meet Evangelist Adekemi Akinsipe, founder of KemmyMuzik International. Explore her ministry, live worship, financial consulting and marriage counselling.",
+  openGraph: {
+    title: "Adekemi Akinsipe | A life of worship. A heart to serve.",
+    description:
+      "Ministry, music and financial consulting, rooted in faith and integrity.",
+    type: "website",
+    locale: "en_NG",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
