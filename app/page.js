@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navigation from "./components/navigation";
 import VideoGallery from "./components/video-gallery";
 import Arrow from "./components/arrow";
+import PlayIcon from "./components/play-icon";
 
 const email = "akinsipeadekemi@gmail.com";
 const booking = (subject, body = "") =>
@@ -90,7 +91,7 @@ export default function Home() {
               </a>
               <a className="text-link" href="#music">
                 <span className="mini-play" aria-hidden="true">
-                  ▶
+                  <PlayIcon />
                 </span>{" "}
                 Watch a ministration
               </a>

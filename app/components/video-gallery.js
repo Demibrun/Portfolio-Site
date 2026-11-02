@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { videos } from "../data/videos";
 import Arrow from "./arrow";
+import PlayIcon from "./play-icon";
 
 export default function VideoGallery() {
   const [selected, setSelected] = useState(0);
@@ -37,7 +38,7 @@ export default function VideoGallery() {
               />
               <span className="poster-shade" />
               <span className="play-button" aria-hidden="true">
-                ▶
+                <PlayIcon />
               </span>
               <span className="poster-label">WATCH MINISTRATION</span>
               <span className="video-duration">{video.duration}</span>
@@ -82,7 +83,9 @@ export default function VideoGallery() {
                   fill
                   sizes="(max-width: 700px) 28vw, (max-width: 760px) 30vw, 104px"
                 />
-                <span aria-hidden="true">▶</span>
+                <span aria-hidden="true">
+                  <PlayIcon />
+                </span>
               </span>
               <span className="video-item-copy">
                 <strong>{item.title}</strong>
